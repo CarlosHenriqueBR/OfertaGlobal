@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="robots" content="noindex" />
+<title>Secure Checkout — Orbitagram Access</title>
+<meta name="description" content="Complete your secure checkout to unlock your account access." />
+<meta property="og:title" content="Secure Checkout — Orbitagram Access" />
+<meta property="og:description" content="Complete your secure checkout to unlock your account access." />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<script src="https://cdn.jsdelivr.net/gh/xTracky/static@latest/utm-handler.js" data-token="e59259e2-ca92-478c-8b01-ecc37dcebadd"></script>
+<script src="https://www.digistore24.com/service/js/orderform_widget.js"></script>
+<style>
+  html,body{margin:0;padding:0;background:#fff;width:100%;max-width:100%;overflow-x:hidden;}
+  *{box-sizing:border-box;}
+  #ds-wrap{overflow:hidden;background:#fff;width:100%;max-width:640px;margin:0 auto;}
+  #ds-shift{margin-top:calc(-1 * var(--crop, 640px));margin-bottom:calc(-1 * var(--bottom-mask, 260px));width:100%;}
+  .ds24_payIFrame{display:block;width:100% !important;max-width:100% !important;border:0;margin:0;padding:0;background:transparent;min-height:1200px;}
+  @media (max-width:700px){
+    #ds-wrap{width:78vw;max-width:none;}
+    #ds-shift{width:100vw;}
+    .ds24_payIFrame{width:100vw !important;max-width:none !important;}
+  }
+  #ds-loading{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;font-family:system-ui,sans-serif;color:#555;z-index:20;background:#fff;}
+  .sp{width:38px;height:38px;border:4px solid #eee;border-top-color:#ff0050;border-radius:50%;animation:spin 1s linear infinite;}
+  @keyframes spin{to{transform:rotate(360deg)}}
+</style>
+</head>
+<body>
+<h1 style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);">Secure Checkout</h1>
+<div id="ds-loading"><div class="sp"></div></div>
+<div id="ds-wrap"><div id="ds-shift"><iframe id="ds-frame" class="ds24_payIFrame" title="Secure Checkout" allow="payment *; clipboard-write" referrerpolicy="no-referrer-when-downgrade" scrolling="no"></iframe></div></div>
+
+<script>
+(function () {
+  var BASE = "https://www.digistore24.com/product/690380/";
+  var search = window.location.search || "";
+  var qp = new URLSearchParams(search);
+
+  // Parametros locais que nao devem ir pra Digistore
+  var crop = parseInt(qp.get("crop") || "", 10);
+  var bottomMask = parseInt(qp.get("bottom") || "", 10);
+  if (!crop || isNaN(crop)) crop = 640;
+  if (!bottomMask || isNaN(bottomMask)) bottomMask = 260;
+  document.documentElement.style.setProperty("--crop", crop + "px");
+  document.documentElement.style.setProperty("--bottom-mask", bottomMask + "px");
+
+  var pass = new URLSearchParams(search);
+  pass.delete("crop");
+  pass.delete("bottom");
+  pass.delete("upsell");
+  pass.set("iframe", "1");
+
+  var frame = document.getElementById("ds-frame");
+  frame.addEventListener("load", function () {
+    var l = document.getElementById("ds-loading");
+    if (l && l.parentNode) l.parentNode.removeChild(l);
+  });
+  frame.src = BASE + "?" + pass.toString();
+})();
+</script>
+</body>
+</html>

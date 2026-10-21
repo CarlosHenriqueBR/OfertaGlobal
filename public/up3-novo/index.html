@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script src="/upsell-gate.js?v=3"></script>
+<script src="https://www.digistore24-scripts.com/service/digistore.js"></script>
+<style>.hidden-upsell{position:absolute!important;width:1px;height:1px;overflow:hidden;opacity:0;pointer-events:none;}</style>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Information Validated</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap');
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      background: #0d0d0d;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .page {
+      width: 100%;
+      max-width: 390px;
+      padding: 48px 28px 56px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .title {
+      font-size: 30px;
+      font-weight: 900;
+      letter-spacing: -.5px;
+      line-height: 1.2;
+      margin-bottom: 32px;
+      background: linear-gradient(135deg, #fe2c55, #25f4ee);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .badge {
+      width: 150px;
+      height: 150px;
+      margin-bottom: 32px;
+      filter: drop-shadow(0 8px 24px rgba(37,244,238,0.25));
+    }
+    .subtitle {
+      font-size: 15px;
+      font-weight: 600;
+      color: #888;
+      line-height: 1.6;
+      margin-bottom: 40px;
+    }
+    .btn-sim {
+      display:block; width:100%; max-width:330px; margin-top:8px;
+      background: linear-gradient(135deg,#fe2c55,#ff5a7a);
+      color:#fff; text-decoration:none; text-align:center;
+      padding:18px 22px; border-radius:16px;
+      font-weight:900; font-size:16px; text-transform:uppercase; letter-spacing:-.2px;
+      box-shadow:0 10px 30px rgba(254,44,85,.35);
+    }
+    .btn-sim span { display:block; margin-top:6px; font-size:11px; font-weight:600; text-transform:none; letter-spacing:0; color:rgba(255,255,255,.85); }
+    .btn-nao-text { display:block; margin-top:14px; color:#777; font-size:12px; text-decoration:underline; }
+    #upsell-container {
+      width: 100%;
+      border-radius: 14px;
+      overflow: hidden;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+
+    <div class="title">Information<br/>successfully validated!</div>
+
+    <svg class="badge" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <radialGradient id="g" cx="38%" cy="28%" r="65%">
+          <stop offset="0%" stop-color="#5bc8f5"/>
+          <stop offset="100%" stop-color="#1a8fe3"/>
+        </radialGradient>
+        <filter id="sh">
+          <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="rgba(30,120,220,0.4)"/>
+        </filter>
+      </defs>
+      <path filter="url(#sh)" fill="url(#g)" d="M100 10 L113 40 L145 28 L138 62 L172 68 L155 95 L172 122 L138 128 L145 162 L113 150 L100 180 L87 150 L55 162 L62 128 L28 122 L45 95 L28 68 L62 62 L55 28 L87 40 Z"/>
+      <polyline points="68,100 90,122 132,78" stroke="#fff" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    </svg>
+
+    <p class="subtitle">Click the button below to<br/>complete the process.</p>
+
+    <a target="_top" href="https://www.digistore24.com/answer/yes?template=light" class="btn-sim">
+      Complete my process now
+      <span>Final step to release your payment</span>
+    </a>
+    <a target="_top" href="https://www.digistore24.com/answer/no" class="btn-nao-text hidden-upsell">
+      No, I don't want to complete the process
+    </a>
+
+  </div>
+<script>
+(function(){
+  function run(){ if(typeof digistoreUpsell==='function'){try{digistoreUpsell();}catch(e){}} }
+  if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',run);}else{run();}
+  setTimeout(run,500); setTimeout(run,1500);
+})();
+</script>
+</body>
+</html>
