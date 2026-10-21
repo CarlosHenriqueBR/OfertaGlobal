@@ -9,175 +9,45 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
-import { Route as Upsell5RouteImport } from './routes/upsell-5'
-import { Route as Upsell4RouteImport } from './routes/upsell-4'
-import { Route as Upsell3RouteImport } from './routes/upsell-3'
-import { Route as Upsell2RouteImport } from './routes/upsell-2'
-import { Route as Upsell1RouteImport } from './routes/upsell-1'
-import { Route as Up3NovoRouteImport } from './routes/up3-novo'
-import { Route as Up2NovoRouteImport } from './routes/up2-novo'
-import { Route as Up1OldRouteImport } from './routes/up1-old'
-import { Route as Up1NovoRouteImport } from './routes/up1-novo'
-import { Route as ThanksRouteImport } from './routes/thanks'
-import { Route as TermsRouteImport } from './routes/terms'
-import { Route as TasksAppRouteImport } from './routes/tasks-app'
-import { Route as ResgatarRouteImport } from './routes/resgatar'
-import { Route as RefundRouteImport } from './routes/refund'
-import { Route as RastreioRouteImport } from './routes/rastreio'
-import { Route as PrivacyRouteImport } from './routes/privacy'
-import { Route as PainelRouteImport } from './routes/painel'
-import { Route as LpRouteImport } from './routes/lp'
-import { Route as LandingpageRouteImport } from './routes/landingpage'
-import { Route as InicioRouteImport } from './routes/inicio'
-import { Route as HistoricoRouteImport } from './routes/historico'
-import { Route as FaqRouteImport } from './routes/faq'
-import { Route as DesbloquearSaqueRouteImport } from './routes/desbloquear-saque'
-import { Route as ContactRouteImport } from './routes/contact'
-import { Route as ConfirmarSaqueRouteImport } from './routes/confirmar-saque'
-import { Route as CheckoutRouteImport } from './routes/checkout'
-import { Route as BackRedirectRouteImport } from './routes/back-redirect'
-import { Route as AdminRouteImport } from './routes/admin'
 import { Route as IndexRouteImport } from './routes/index'
-import { Route as ApiPublicSendAccessEmailRouteImport } from './routes/api/public/send-access-email'
-import { Route as ApiPublicSaveLeadRouteImport } from './routes/api/public/save-lead'
-import { Route as ApiPublicPanelDataRouteImport } from './routes/api/public/panel-data'
-import { Route as ApiPublicDigistoreWebhookRouteImport } from './routes/api/public/digistore-webhook'
-import { Route as ApiPublicCreatePixPaymentRouteImport } from './routes/api/public/create-pix-payment'
+import { Route as AdminRouteImport } from './routes/admin'
+import { Route as BackRedirectRouteImport } from './routes/back-redirect'
+import { Route as CheckoutRouteImport } from './routes/checkout'
+import { Route as ConfirmarSaqueRouteImport } from './routes/confirmar-saque'
+import { Route as ContactRouteImport } from './routes/contact'
+import { Route as DesbloquearSaqueRouteImport } from './routes/desbloquear-saque'
+import { Route as FaqRouteImport } from './routes/faq'
+import { Route as HistoricoRouteImport } from './routes/historico'
+import { Route as InicioRouteImport } from './routes/inicio'
+import { Route as LandingpageRouteImport } from './routes/landingpage'
+import { Route as LpRouteImport } from './routes/lp'
+import { Route as PainelRouteImport } from './routes/painel'
+import { Route as PrivacyRouteImport } from './routes/privacy'
+import { Route as RastreioRouteImport } from './routes/rastreio'
+import { Route as RefundRouteImport } from './routes/refund'
+import { Route as ResgatarRouteImport } from './routes/resgatar'
+import { Route as TasksAppRouteImport } from './routes/tasks-app'
+import { Route as TermsRouteImport } from './routes/terms'
+import { Route as ThanksRouteImport } from './routes/thanks'
+import { Route as Up1NovoRouteImport } from './routes/up1-novo'
+import { Route as Up1OldRouteImport } from './routes/up1-old'
+import { Route as Up2NovoRouteImport } from './routes/up2-novo'
+import { Route as Up3NovoRouteImport } from './routes/up3-novo'
+import { Route as Upsell1RouteImport } from './routes/upsell-1'
+import { Route as Upsell2RouteImport } from './routes/upsell-2'
+import { Route as Upsell3RouteImport } from './routes/upsell-3'
+import { Route as Upsell4RouteImport } from './routes/upsell-4'
+import { Route as Upsell5RouteImport } from './routes/upsell-5'
 import { Route as ApiPublicCheckPixStatusRouteImport } from './routes/api/public/check-pix-status'
+import { Route as ApiPublicCreatePixPaymentRouteImport } from './routes/api/public/create-pix-payment'
+import { Route as ApiPublicDigistoreWebhookRouteImport } from './routes/api/public/digistore-webhook'
+import { Route as ApiPublicPanelDataRouteImport } from './routes/api/public/panel-data'
+import { Route as ApiPublicSaveLeadRouteImport } from './routes/api/public/save-lead'
+import { Route as ApiPublicSendAccessEmailRouteImport } from './routes/api/public/send-access-email'
 
-const Upsell5Route = Upsell5RouteImport.update({
-  id: '/upsell-5',
-  path: '/upsell-5',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const Upsell4Route = Upsell4RouteImport.update({
-  id: '/upsell-4',
-  path: '/upsell-4',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const Upsell3Route = Upsell3RouteImport.update({
-  id: '/upsell-3',
-  path: '/upsell-3',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const Upsell2Route = Upsell2RouteImport.update({
-  id: '/upsell-2',
-  path: '/upsell-2',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const Upsell1Route = Upsell1RouteImport.update({
-  id: '/upsell-1',
-  path: '/upsell-1',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const Up3NovoRoute = Up3NovoRouteImport.update({
-  id: '/up3-novo',
-  path: '/up3-novo',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const Up2NovoRoute = Up2NovoRouteImport.update({
-  id: '/up2-novo',
-  path: '/up2-novo',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const Up1OldRoute = Up1OldRouteImport.update({
-  id: '/up1-old',
-  path: '/up1-old',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const Up1NovoRoute = Up1NovoRouteImport.update({
-  id: '/up1-novo',
-  path: '/up1-novo',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ThanksRoute = ThanksRouteImport.update({
-  id: '/thanks',
-  path: '/thanks',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const TermsRoute = TermsRouteImport.update({
-  id: '/terms',
-  path: '/terms',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const TasksAppRoute = TasksAppRouteImport.update({
-  id: '/tasks-app',
-  path: '/tasks-app',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ResgatarRoute = ResgatarRouteImport.update({
-  id: '/resgatar',
-  path: '/resgatar',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const RefundRoute = RefundRouteImport.update({
-  id: '/refund',
-  path: '/refund',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const RastreioRoute = RastreioRouteImport.update({
-  id: '/rastreio',
-  path: '/rastreio',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const PrivacyRoute = PrivacyRouteImport.update({
-  id: '/privacy',
-  path: '/privacy',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const PainelRoute = PainelRouteImport.update({
-  id: '/painel',
-  path: '/painel',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const LpRoute = LpRouteImport.update({
-  id: '/lp',
-  path: '/lp',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const LandingpageRoute = LandingpageRouteImport.update({
-  id: '/landingpage',
-  path: '/landingpage',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const InicioRoute = InicioRouteImport.update({
-  id: '/inicio',
-  path: '/inicio',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const HistoricoRoute = HistoricoRouteImport.update({
-  id: '/historico',
-  path: '/historico',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const FaqRoute = FaqRouteImport.update({
-  id: '/faq',
-  path: '/faq',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const DesbloquearSaqueRoute = DesbloquearSaqueRouteImport.update({
-  id: '/desbloquear-saque',
-  path: '/desbloquear-saque',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ContactRoute = ContactRouteImport.update({
-  id: '/contact',
-  path: '/contact',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ConfirmarSaqueRoute = ConfirmarSaqueRouteImport.update({
-  id: '/confirmar-saque',
-  path: '/confirmar-saque',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const CheckoutRoute = CheckoutRouteImport.update({
-  id: '/checkout',
-  path: '/checkout',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const BackRedirectRoute = BackRedirectRouteImport.update({
-  id: '/back-redirect',
-  path: '/back-redirect',
+const IndexRoute = IndexRouteImport.update({
+  id: '/',
+  path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
 const AdminRoute = AdminRouteImport.update({
@@ -185,9 +55,166 @@ const AdminRoute = AdminRouteImport.update({
   path: '/admin',
   getParentRoute: () => rootRouteImport,
 } as any)
-const IndexRoute = IndexRouteImport.update({
-  id: '/',
-  path: '/',
+const BackRedirectRoute = BackRedirectRouteImport.update({
+  id: '/back-redirect',
+  path: '/back-redirect',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CheckoutRoute = CheckoutRouteImport.update({
+  id: '/checkout',
+  path: '/checkout',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ConfirmarSaqueRoute = ConfirmarSaqueRouteImport.update({
+  id: '/confirmar-saque',
+  path: '/confirmar-saque',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ContactRoute = ContactRouteImport.update({
+  id: '/contact',
+  path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DesbloquearSaqueRoute = DesbloquearSaqueRouteImport.update({
+  id: '/desbloquear-saque',
+  path: '/desbloquear-saque',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FaqRoute = FaqRouteImport.update({
+  id: '/faq',
+  path: '/faq',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const HistoricoRoute = HistoricoRouteImport.update({
+  id: '/historico',
+  path: '/historico',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const InicioRoute = InicioRouteImport.update({
+  id: '/inicio',
+  path: '/inicio',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LandingpageRoute = LandingpageRouteImport.update({
+  id: '/landingpage',
+  path: '/landingpage',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LpRoute = LpRouteImport.update({
+  id: '/lp',
+  path: '/lp',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PainelRoute = PainelRouteImport.update({
+  id: '/painel',
+  path: '/painel',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PrivacyRoute = PrivacyRouteImport.update({
+  id: '/privacy',
+  path: '/privacy',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const RastreioRoute = RastreioRouteImport.update({
+  id: '/rastreio',
+  path: '/rastreio',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const RefundRoute = RefundRouteImport.update({
+  id: '/refund',
+  path: '/refund',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ResgatarRoute = ResgatarRouteImport.update({
+  id: '/resgatar',
+  path: '/resgatar',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TasksAppRoute = TasksAppRouteImport.update({
+  id: '/tasks-app',
+  path: '/tasks-app',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TermsRoute = TermsRouteImport.update({
+  id: '/terms',
+  path: '/terms',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ThanksRoute = ThanksRouteImport.update({
+  id: '/thanks',
+  path: '/thanks',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const Up1NovoRoute = Up1NovoRouteImport.update({
+  id: '/up1-novo',
+  path: '/up1-novo',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const Up1OldRoute = Up1OldRouteImport.update({
+  id: '/up1-old',
+  path: '/up1-old',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const Up2NovoRoute = Up2NovoRouteImport.update({
+  id: '/up2-novo',
+  path: '/up2-novo',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const Up3NovoRoute = Up3NovoRouteImport.update({
+  id: '/up3-novo',
+  path: '/up3-novo',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const Upsell1Route = Upsell1RouteImport.update({
+  id: '/upsell-1',
+  path: '/upsell-1',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const Upsell2Route = Upsell2RouteImport.update({
+  id: '/upsell-2',
+  path: '/upsell-2',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const Upsell3Route = Upsell3RouteImport.update({
+  id: '/upsell-3',
+  path: '/upsell-3',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const Upsell4Route = Upsell4RouteImport.update({
+  id: '/upsell-4',
+  path: '/upsell-4',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const Upsell5Route = Upsell5RouteImport.update({
+  id: '/upsell-5',
+  path: '/upsell-5',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ApiPublicCheckPixStatusRoute = ApiPublicCheckPixStatusRouteImport.update({
+  id: '/api/public/check-pix-status',
+  path: '/api/public/check-pix-status',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ApiPublicCreatePixPaymentRoute =
+  ApiPublicCreatePixPaymentRouteImport.update({
+    id: '/api/public/create-pix-payment',
+    path: '/api/public/create-pix-payment',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const ApiPublicDigistoreWebhookRoute =
+  ApiPublicDigistoreWebhookRouteImport.update({
+    id: '/api/public/digistore-webhook',
+    path: '/api/public/digistore-webhook',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const ApiPublicPanelDataRoute = ApiPublicPanelDataRouteImport.update({
+  id: '/api/public/panel-data',
+  path: '/api/public/panel-data',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ApiPublicSaveLeadRoute = ApiPublicSaveLeadRouteImport.update({
+  id: '/api/public/save-lead',
+  path: '/api/public/save-lead',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ApiPublicSendAccessEmailRoute =
@@ -196,33 +223,6 @@ const ApiPublicSendAccessEmailRoute =
     path: '/api/public/send-access-email',
     getParentRoute: () => rootRouteImport,
   } as any)
-const ApiPublicSaveLeadRoute = ApiPublicSaveLeadRouteImport.update({
-  id: '/api/public/save-lead',
-  path: '/api/public/save-lead',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ApiPublicPanelDataRoute = ApiPublicPanelDataRouteImport.update({
-  id: '/api/public/panel-data',
-  path: '/api/public/panel-data',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ApiPublicDigistoreWebhookRoute =
-  ApiPublicDigistoreWebhookRouteImport.update({
-    id: '/api/public/digistore-webhook',
-    path: '/api/public/digistore-webhook',
-    getParentRoute: () => rootRouteImport,
-  } as any)
-const ApiPublicCreatePixPaymentRoute =
-  ApiPublicCreatePixPaymentRouteImport.update({
-    id: '/api/public/create-pix-payment',
-    path: '/api/public/create-pix-payment',
-    getParentRoute: () => rootRouteImport,
-  } as any)
-const ApiPublicCheckPixStatusRoute = ApiPublicCheckPixStatusRouteImport.update({
-  id: '/api/public/check-pix-status',
-  path: '/api/public/check-pix-status',
-  getParentRoute: () => rootRouteImport,
-} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -490,193 +490,11 @@ export interface RootRouteChildren {
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
-    '/upsell-5': {
-      id: '/upsell-5'
-      path: '/upsell-5'
-      fullPath: '/upsell-5'
-      preLoaderRoute: typeof Upsell5RouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/upsell-4': {
-      id: '/upsell-4'
-      path: '/upsell-4'
-      fullPath: '/upsell-4'
-      preLoaderRoute: typeof Upsell4RouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/upsell-3': {
-      id: '/upsell-3'
-      path: '/upsell-3'
-      fullPath: '/upsell-3'
-      preLoaderRoute: typeof Upsell3RouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/upsell-2': {
-      id: '/upsell-2'
-      path: '/upsell-2'
-      fullPath: '/upsell-2'
-      preLoaderRoute: typeof Upsell2RouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/upsell-1': {
-      id: '/upsell-1'
-      path: '/upsell-1'
-      fullPath: '/upsell-1'
-      preLoaderRoute: typeof Upsell1RouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/up3-novo': {
-      id: '/up3-novo'
-      path: '/up3-novo'
-      fullPath: '/up3-novo'
-      preLoaderRoute: typeof Up3NovoRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/up2-novo': {
-      id: '/up2-novo'
-      path: '/up2-novo'
-      fullPath: '/up2-novo'
-      preLoaderRoute: typeof Up2NovoRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/up1-old': {
-      id: '/up1-old'
-      path: '/up1-old'
-      fullPath: '/up1-old'
-      preLoaderRoute: typeof Up1OldRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/up1-novo': {
-      id: '/up1-novo'
-      path: '/up1-novo'
-      fullPath: '/up1-novo'
-      preLoaderRoute: typeof Up1NovoRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/thanks': {
-      id: '/thanks'
-      path: '/thanks'
-      fullPath: '/thanks'
-      preLoaderRoute: typeof ThanksRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/terms': {
-      id: '/terms'
-      path: '/terms'
-      fullPath: '/terms'
-      preLoaderRoute: typeof TermsRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/tasks-app': {
-      id: '/tasks-app'
-      path: '/tasks-app'
-      fullPath: '/tasks-app'
-      preLoaderRoute: typeof TasksAppRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/resgatar': {
-      id: '/resgatar'
-      path: '/resgatar'
-      fullPath: '/resgatar'
-      preLoaderRoute: typeof ResgatarRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/refund': {
-      id: '/refund'
-      path: '/refund'
-      fullPath: '/refund'
-      preLoaderRoute: typeof RefundRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/rastreio': {
-      id: '/rastreio'
-      path: '/rastreio'
-      fullPath: '/rastreio'
-      preLoaderRoute: typeof RastreioRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/privacy': {
-      id: '/privacy'
-      path: '/privacy'
-      fullPath: '/privacy'
-      preLoaderRoute: typeof PrivacyRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/painel': {
-      id: '/painel'
-      path: '/painel'
-      fullPath: '/painel'
-      preLoaderRoute: typeof PainelRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/lp': {
-      id: '/lp'
-      path: '/lp'
-      fullPath: '/lp'
-      preLoaderRoute: typeof LpRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/landingpage': {
-      id: '/landingpage'
-      path: '/landingpage'
-      fullPath: '/landingpage'
-      preLoaderRoute: typeof LandingpageRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/inicio': {
-      id: '/inicio'
-      path: '/inicio'
-      fullPath: '/inicio'
-      preLoaderRoute: typeof InicioRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/historico': {
-      id: '/historico'
-      path: '/historico'
-      fullPath: '/historico'
-      preLoaderRoute: typeof HistoricoRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/faq': {
-      id: '/faq'
-      path: '/faq'
-      fullPath: '/faq'
-      preLoaderRoute: typeof FaqRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/desbloquear-saque': {
-      id: '/desbloquear-saque'
-      path: '/desbloquear-saque'
-      fullPath: '/desbloquear-saque'
-      preLoaderRoute: typeof DesbloquearSaqueRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/contact': {
-      id: '/contact'
-      path: '/contact'
-      fullPath: '/contact'
-      preLoaderRoute: typeof ContactRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/confirmar-saque': {
-      id: '/confirmar-saque'
-      path: '/confirmar-saque'
-      fullPath: '/confirmar-saque'
-      preLoaderRoute: typeof ConfirmarSaqueRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/checkout': {
-      id: '/checkout'
-      path: '/checkout'
-      fullPath: '/checkout'
-      preLoaderRoute: typeof CheckoutRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/back-redirect': {
-      id: '/back-redirect'
-      path: '/back-redirect'
-      fullPath: '/back-redirect'
-      preLoaderRoute: typeof BackRedirectRouteImport
+    '/': {
+      id: '/'
+      path: '/'
+      fullPath: '/'
+      preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/admin': {
@@ -686,39 +504,200 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AdminRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/': {
-      id: '/'
-      path: '/'
-      fullPath: '/'
-      preLoaderRoute: typeof IndexRouteImport
+    '/back-redirect': {
+      id: '/back-redirect'
+      path: '/back-redirect'
+      fullPath: '/back-redirect'
+      preLoaderRoute: typeof BackRedirectRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/api/public/send-access-email': {
-      id: '/api/public/send-access-email'
-      path: '/api/public/send-access-email'
-      fullPath: '/api/public/send-access-email'
-      preLoaderRoute: typeof ApiPublicSendAccessEmailRouteImport
+    '/checkout': {
+      id: '/checkout'
+      path: '/checkout'
+      fullPath: '/checkout'
+      preLoaderRoute: typeof CheckoutRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/api/public/save-lead': {
-      id: '/api/public/save-lead'
-      path: '/api/public/save-lead'
-      fullPath: '/api/public/save-lead'
-      preLoaderRoute: typeof ApiPublicSaveLeadRouteImport
+    '/confirmar-saque': {
+      id: '/confirmar-saque'
+      path: '/confirmar-saque'
+      fullPath: '/confirmar-saque'
+      preLoaderRoute: typeof ConfirmarSaqueRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/api/public/panel-data': {
-      id: '/api/public/panel-data'
-      path: '/api/public/panel-data'
-      fullPath: '/api/public/panel-data'
-      preLoaderRoute: typeof ApiPublicPanelDataRouteImport
+    '/contact': {
+      id: '/contact'
+      path: '/contact'
+      fullPath: '/contact'
+      preLoaderRoute: typeof ContactRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/api/public/digistore-webhook': {
-      id: '/api/public/digistore-webhook'
-      path: '/api/public/digistore-webhook'
-      fullPath: '/api/public/digistore-webhook'
-      preLoaderRoute: typeof ApiPublicDigistoreWebhookRouteImport
+    '/desbloquear-saque': {
+      id: '/desbloquear-saque'
+      path: '/desbloquear-saque'
+      fullPath: '/desbloquear-saque'
+      preLoaderRoute: typeof DesbloquearSaqueRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/faq': {
+      id: '/faq'
+      path: '/faq'
+      fullPath: '/faq'
+      preLoaderRoute: typeof FaqRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/historico': {
+      id: '/historico'
+      path: '/historico'
+      fullPath: '/historico'
+      preLoaderRoute: typeof HistoricoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/inicio': {
+      id: '/inicio'
+      path: '/inicio'
+      fullPath: '/inicio'
+      preLoaderRoute: typeof InicioRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/landingpage': {
+      id: '/landingpage'
+      path: '/landingpage'
+      fullPath: '/landingpage'
+      preLoaderRoute: typeof LandingpageRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/lp': {
+      id: '/lp'
+      path: '/lp'
+      fullPath: '/lp'
+      preLoaderRoute: typeof LpRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/painel': {
+      id: '/painel'
+      path: '/painel'
+      fullPath: '/painel'
+      preLoaderRoute: typeof PainelRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/privacy': {
+      id: '/privacy'
+      path: '/privacy'
+      fullPath: '/privacy'
+      preLoaderRoute: typeof PrivacyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/rastreio': {
+      id: '/rastreio'
+      path: '/rastreio'
+      fullPath: '/rastreio'
+      preLoaderRoute: typeof RastreioRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/refund': {
+      id: '/refund'
+      path: '/refund'
+      fullPath: '/refund'
+      preLoaderRoute: typeof RefundRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/resgatar': {
+      id: '/resgatar'
+      path: '/resgatar'
+      fullPath: '/resgatar'
+      preLoaderRoute: typeof ResgatarRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/tasks-app': {
+      id: '/tasks-app'
+      path: '/tasks-app'
+      fullPath: '/tasks-app'
+      preLoaderRoute: typeof TasksAppRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/terms': {
+      id: '/terms'
+      path: '/terms'
+      fullPath: '/terms'
+      preLoaderRoute: typeof TermsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/thanks': {
+      id: '/thanks'
+      path: '/thanks'
+      fullPath: '/thanks'
+      preLoaderRoute: typeof ThanksRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/up1-novo': {
+      id: '/up1-novo'
+      path: '/up1-novo'
+      fullPath: '/up1-novo'
+      preLoaderRoute: typeof Up1NovoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/up1-old': {
+      id: '/up1-old'
+      path: '/up1-old'
+      fullPath: '/up1-old'
+      preLoaderRoute: typeof Up1OldRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/up2-novo': {
+      id: '/up2-novo'
+      path: '/up2-novo'
+      fullPath: '/up2-novo'
+      preLoaderRoute: typeof Up2NovoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/up3-novo': {
+      id: '/up3-novo'
+      path: '/up3-novo'
+      fullPath: '/up3-novo'
+      preLoaderRoute: typeof Up3NovoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/upsell-1': {
+      id: '/upsell-1'
+      path: '/upsell-1'
+      fullPath: '/upsell-1'
+      preLoaderRoute: typeof Upsell1RouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/upsell-2': {
+      id: '/upsell-2'
+      path: '/upsell-2'
+      fullPath: '/upsell-2'
+      preLoaderRoute: typeof Upsell2RouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/upsell-3': {
+      id: '/upsell-3'
+      path: '/upsell-3'
+      fullPath: '/upsell-3'
+      preLoaderRoute: typeof Upsell3RouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/upsell-4': {
+      id: '/upsell-4'
+      path: '/upsell-4'
+      fullPath: '/upsell-4'
+      preLoaderRoute: typeof Upsell4RouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/upsell-5': {
+      id: '/upsell-5'
+      path: '/upsell-5'
+      fullPath: '/upsell-5'
+      preLoaderRoute: typeof Upsell5RouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/api/public/check-pix-status': {
+      id: '/api/public/check-pix-status'
+      path: '/api/public/check-pix-status'
+      fullPath: '/api/public/check-pix-status'
+      preLoaderRoute: typeof ApiPublicCheckPixStatusRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/api/public/create-pix-payment': {
@@ -728,11 +707,32 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ApiPublicCreatePixPaymentRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/api/public/check-pix-status': {
-      id: '/api/public/check-pix-status'
-      path: '/api/public/check-pix-status'
-      fullPath: '/api/public/check-pix-status'
-      preLoaderRoute: typeof ApiPublicCheckPixStatusRouteImport
+    '/api/public/digistore-webhook': {
+      id: '/api/public/digistore-webhook'
+      path: '/api/public/digistore-webhook'
+      fullPath: '/api/public/digistore-webhook'
+      preLoaderRoute: typeof ApiPublicDigistoreWebhookRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/api/public/panel-data': {
+      id: '/api/public/panel-data'
+      path: '/api/public/panel-data'
+      fullPath: '/api/public/panel-data'
+      preLoaderRoute: typeof ApiPublicPanelDataRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/api/public/save-lead': {
+      id: '/api/public/save-lead'
+      path: '/api/public/save-lead'
+      fullPath: '/api/public/save-lead'
+      preLoaderRoute: typeof ApiPublicSaveLeadRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/api/public/send-access-email': {
+      id: '/api/public/send-access-email'
+      path: '/api/public/send-access-email'
+      fullPath: '/api/public/send-access-email'
+      preLoaderRoute: typeof ApiPublicSendAccessEmailRouteImport
       parentRoute: typeof rootRouteImport
     }
   }
